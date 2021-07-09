@@ -12,17 +12,20 @@ namespace Lab01.Ex._4_MdiApplication
 {
     public partial class ParentForm : Form
     {
+
         public ParentForm()
         {
             InitializeComponent();
         }
+        private int openDocuments = 0;
 
         private void fileMenuItemToolStripMenuItem_Click(object sender, EventArgs e)
         {
+           
             ChildForm newChild = new ChildForm();
             newChild.MdiParent = this;
             newChild.Show();
-            
+            newChild.Text = newChild.Text + " " + ++openDocuments;
         }
 
         private void ExitMenuItem_Click(object sender, EventArgs e)

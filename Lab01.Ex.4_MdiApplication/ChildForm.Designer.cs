@@ -39,10 +39,10 @@ namespace Lab01.Ex._4_MdiApplication
             // ChildTextBox
             // 
             this.ChildTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ChildTextBox.Location = new System.Drawing.Point(0, 48);
+            this.ChildTextBox.Location = new System.Drawing.Point(0, 24);
             this.ChildTextBox.Name = "ChildTextBox";
-            this.ChildTextBox.Size = new System.Drawing.Size(404, 233);
-            this.ChildTextBox.TabIndex = 3;
+            this.ChildTextBox.Size = new System.Drawing.Size(800, 426);
+            this.ChildTextBox.TabIndex = 0;
             this.ChildTextBox.Text = "";
             // 
             // ChildWindowMenu
@@ -51,8 +51,8 @@ namespace Lab01.Ex._4_MdiApplication
             this.FormatMenuItem});
             this.ChildWindowMenu.Location = new System.Drawing.Point(0, 0);
             this.ChildWindowMenu.Name = "ChildWindowMenu";
-            this.ChildWindowMenu.Size = new System.Drawing.Size(404, 24);
-            this.ChildWindowMenu.TabIndex = 4;
+            this.ChildWindowMenu.Size = new System.Drawing.Size(800, 24);
+            this.ChildWindowMenu.TabIndex = 1;
             this.ChildWindowMenu.Text = "menuStrip1";
             // 
             // FormatMenuItem
@@ -75,14 +75,13 @@ namespace Lab01.Ex._4_MdiApplication
             // ChildForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(404, 281);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.ChildTextBox);
             this.Controls.Add(this.ChildWindowMenu);
-            this.IsMdiContainer = false;
+            this.MainMenuStrip = this.ChildWindowMenu;
             this.Name = "ChildForm";
             this.Text = "Child Form";
-            this.Controls.SetChildIndex(this.ChildWindowMenu, 0);
-            this.Controls.SetChildIndex(this.ChildTextBox, 0);
             this.ChildWindowMenu.ResumeLayout(false);
             this.ChildWindowMenu.PerformLayout();
             this.ResumeLayout(false);

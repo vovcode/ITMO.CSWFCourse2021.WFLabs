@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Lab01.Ex._4_MdiApplication
 {
-    public partial class ChildForm : Lab01.Ex._4_MdiApplication.ParentForm
+    public partial class ChildForm : Form
     {
         public ChildForm()
         {
