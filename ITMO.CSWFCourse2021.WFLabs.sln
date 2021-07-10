@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab02.Ex.2_TestList", "Lab0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab02.Ex.3_MdiApplication", "Lab02.Ex.3_MdiApplication\Lab02.Ex.3_MdiApplication.csproj", "{BD1BB50E-B5FF-43AE-B8A8-2614D4C77809}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab02.Ex.4_MdiApplication", "Lab02.Ex.4_MdiApplication\Lab02.Ex.4_MdiApplication.csproj", "{289ED9BF-6332-49F2-8549-5EC23ADBA746}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{BD1BB50E-B5FF-43AE-B8A8-2614D4C77809}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD1BB50E-B5FF-43AE-B8A8-2614D4C77809}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD1BB50E-B5FF-43AE-B8A8-2614D4C77809}.Release|Any CPU.Build.0 = Release|Any CPU
+		{289ED9BF-6332-49F2-8549-5EC23ADBA746}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{289ED9BF-6332-49F2-8549-5EC23ADBA746}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{289ED9BF-6332-49F2-8549-5EC23ADBA746}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{289ED9BF-6332-49F2-8549-5EC23ADBA746}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
