@@ -16,6 +16,7 @@ namespace Lab02.Ex._4_MdiApplication
         public ParentForm()
         {
             InitializeComponent();
+            spData.Text = Convert.ToString(System.DateTime.Today.ToLongDateString());
         }
 
         private void ParentForm_Load(object sender, EventArgs e)
@@ -69,9 +70,11 @@ namespace Lab02.Ex._4_MdiApplication
                     break;
                 case "Cascade":
                     this.LayoutMdi(System.Windows.Forms.MdiLayout.Cascade);
+                    spWin.Text = "Windows is cascade";
                     break;
                 case "Tile":
                     this.LayoutMdi(System.Windows.Forms.MdiLayout.TileHorizontal);
+                    spWin.Text = "Windows is horizontal";
                     break;
             }
         }
