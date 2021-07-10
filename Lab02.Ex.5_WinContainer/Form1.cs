@@ -35,5 +35,23 @@ namespace Lab02.Ex._5_WinContainer
             Button aButton = new Button();
             tableLayoutPanel1.Controls.Add(aButton, 1, 1);
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            if (splitContainer1.FixedPanel == FixedPanel.Panel1)
+                splitContainer1.FixedPanel = FixedPanel.None;
+            else
+                splitContainer1.FixedPanel = FixedPanel.Panel1;
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            splitContainer1.IsSplitterFixed = !(splitContainer1.IsSplitterFixed);
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            splitContainer1.Panel1Collapsed = !(splitContainer1.Panel1Collapsed);
+        }
     }
 }

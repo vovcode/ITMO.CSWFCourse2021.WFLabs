@@ -331,6 +331,7 @@ namespace Lab02.Ex._5_WinContainer
             this.button10.TabIndex = 0;
             this.button10.Text = "Fix/Unfix Рапеl1";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button11
             // 
@@ -340,6 +341,7 @@ namespace Lab02.Ex._5_WinContainer
             this.button11.TabIndex = 1;
             this.button11.Text = "Fix/Unfix Splitter";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button12
             // 
@@ -349,6 +351,7 @@ namespace Lab02.Ex._5_WinContainer
             this.button12.TabIndex = 0;
             this.button12.Text = "Collapse/Uncollapse Рапеl1";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // Form1
             // 
