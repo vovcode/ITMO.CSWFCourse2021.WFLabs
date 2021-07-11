@@ -104,5 +104,9 @@ namespace Lab02.Ex._6_BiblWorm
 
         }
 
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
