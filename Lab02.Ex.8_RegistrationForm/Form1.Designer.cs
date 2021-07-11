@@ -48,6 +48,7 @@ namespace Lab02.Ex._8_RegistrationForm
             this.button1.TabIndex = 9;
             this.button1.Text = "Регистрация";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // groupBox1
             // 
@@ -61,6 +62,7 @@ namespace Lab02.Ex._8_RegistrationForm
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Введите регистрационные данные";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // textBox2
             // 
@@ -103,6 +105,7 @@ namespace Lab02.Ex._8_RegistrationForm
             this.checkBox1.TabIndex = 7;
             this.checkBox1.Text = "Расширенные возможности";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // label1
             // 
@@ -112,6 +115,7 @@ namespace Lab02.Ex._8_RegistrationForm
             this.label1.Size = new System.Drawing.Size(144, 13);
             this.label1.TabIndex = 6;
             this.label1.Text = "Выберите тип регистрации";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Form1
             // 
@@ -124,7 +128,9 @@ namespace Lab02.Ex._8_RegistrationForm
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Регистрация";
+            this.TopMost = true;
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
