@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab02.Ex.6_BiblWorm", "Lab0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab02.Ex.7_RegistrationForm", "Lab02.Ex.7_RegistrationForm\Lab02.Ex.7_RegistrationForm.csproj", "{10C60EAF-691E-47B1-AE57-EEFDE2284F7B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab02.Ex.8_RegistrationForm", "Lab02.Ex.8_RegistrationForm\Lab02.Ex.8_RegistrationForm.csproj", "{CCB67409-B201-48D9-864A-F60E8ABE2301}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{10C60EAF-691E-47B1-AE57-EEFDE2284F7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10C60EAF-691E-47B1-AE57-EEFDE2284F7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10C60EAF-691E-47B1-AE57-EEFDE2284F7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCB67409-B201-48D9-864A-F60E8ABE2301}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCB67409-B201-48D9-864A-F60E8ABE2301}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCB67409-B201-48D9-864A-F60E8ABE2301}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCB67409-B201-48D9-864A-F60E8ABE2301}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
