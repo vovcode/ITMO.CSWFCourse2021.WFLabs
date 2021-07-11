@@ -7,14 +7,14 @@ namespace MyClass
 {
     class Magazine : Item, IPubs
     {
-        private String volume;    // том
+        private int volume;    // том
         private int number;        // номер
         private String title;       // название
         private int year;      // дата выпуска
 
         public bool IfSubs { get; set; } // подписка на журнал
 
-        public Magazine(String volume, int number, String title, int year, long invNumber, bool taken)
+        public Magazine(int volume, int number, String title, int year, long invNumber, bool taken)
             : base(invNumber, taken)
         {
             this.volume = volume;

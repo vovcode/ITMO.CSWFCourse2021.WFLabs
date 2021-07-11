@@ -27,6 +27,7 @@ namespace Lab02.Ex._9_BiblWorm
         {
 
         }
+        //Book
         public string Author // автор
         {
             get { return textBox1.Text; }
@@ -77,6 +78,37 @@ namespace Lab02.Ex._9_BiblWorm
             get { return (int)numericUpDown4.Value; }
             set { numericUpDown4.Value = value; }
         }
+        //Magazine
+        public string MagazineTitle 
+        {
+            get { return textBox4.Text;}
+            set { textBox4.Text = value; }
+        }
+        public int MagazineVolume
+        {
+            get { return (int)numericUpDown8.Value;  }
+            set {numericUpDown8.Value = value ; }
+        }
+        public int MagazineNumber
+        {
+            get { return (int)numericUpDown5.Value; }
+            set { numericUpDown5.Value = value; }
+        }
+        public int MagazineYear
+        {
+            get { return (int)numericUpDown6.Value; }
+            set { numericUpDown6.Value = value; }
+        }
+        public int MagazineInvNumber 
+        {
+            get { return (int)numericUpDown7.Value; }
+            set { numericUpDown7.Value = value; }
+        }
+        public bool MagazineExistence
+        {
+            get { return checkBox4.Checked; }
+            set { checkBox4.Checked = value; }
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -101,6 +133,22 @@ namespace Lab02.Ex._9_BiblWorm
                 sb.Append("\n" + item.ToString());
             }
             richTextBox1.Text = sb.ToString();
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MyClass.Magazine b = new MyClass.Magazine(MagazineVolume, MagazineNumber, MagazineTitle, MagazineYear, MagazineInvNumber, MagazineExistence);
+            its.Add(b);
+
+            MagazineTitle = "";
+            MagazineVolume = MagazineNumber /*= MagazineInvNumber = 1*/;
+            Year = 1900;
+            Existence = ReturnTime = false;
+        }
+
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        {
 
         }
     }
