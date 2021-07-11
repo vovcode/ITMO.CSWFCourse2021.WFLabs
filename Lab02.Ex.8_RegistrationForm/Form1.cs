@@ -35,6 +35,7 @@ namespace Lab02.Ex._8_RegistrationForm
                 txt.TabIndex = 1;
                 txt.Text = "";
                 groupBox1.Controls.Add(txt);
+                txt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
             }
             else
             {
@@ -46,6 +47,7 @@ namespace Lab02.Ex._8_RegistrationForm
                     lcv -= 1;
                 }
             }
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -61,6 +63,24 @@ namespace Lab02.Ex._8_RegistrationForm
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("Поле Name не может содержать цифры");
+            }
+        }
+
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("Поле PIN не может содержать буквы");
+            }
         }
     }
 }
