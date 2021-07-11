@@ -72,14 +72,41 @@ namespace Lab02.Ex._8_RegistrationForm
                 e.Handled = true;
                 MessageBox.Show("Поле Name не может содержать цифры");
             }
+            errorProvider1.SetError(textBox1, "Must be letter");
         }
 
         private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsDigit(e.KeyChar))
+            //if (!char.IsDigit(e.KeyChar))
+            //{
+            //    e.Handled = true;
+            //    MessageBox.Show("Поле PIN не может содержать буквы");
+            //}
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_Validating(object sender, CancelEventArgs e)
+        {
+            if (textBox2.Text == "")
             {
-                e.Handled = true;
-                MessageBox.Show("Поле PIN не может содержать буквы");
+                e.Cancel = false;
+            }
+            else
+            {
+                try
+                {
+                    double.Parse(textBox2.Text);
+                    e.Cancel = false;
+                }
+                catch
+                {
+                    e.Cancel = true;
+                    MessageBox.Show("Поле PIN не может содержать буквы");
+                }
             }
         }
     }
