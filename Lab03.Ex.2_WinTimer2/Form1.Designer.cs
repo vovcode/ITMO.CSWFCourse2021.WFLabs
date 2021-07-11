@@ -29,13 +29,34 @@ namespace Lab03.Ex._2_WinTimer2
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.userControlTimer21 = new Lab03.Ex._2_WinTimer2.UserControlTimer2();
+            this.SuspendLayout();
+            // 
+            // userControlTimer21
+            // 
+            this.userControlTimer21.Location = new System.Drawing.Point(104, 56);
+            this.userControlTimer21.Name = "userControlTimer21";
+            this.userControlTimer21.Size = new System.Drawing.Size(75, 23);
+            this.userControlTimer21.TabIndex = 0;
+            this.userControlTimer21.Text = "userControlTimer21";
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(278, 143);
+            this.Controls.Add(this.userControlTimer21);
+            this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.TopMost = true;
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private UserControlTimer2 userControlTimer21;
     }
 }
 
