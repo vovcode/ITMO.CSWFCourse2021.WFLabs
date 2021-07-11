@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab03.Ex.2_WinTimer2", "Lab
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab03.Ex.3_WinButNum", "Lab03.Ex.3_WinButNum\Lab03.Ex.3_WinButNum.csproj", "{39AD80BF-FA2E-4909-A9C6-0E5C832BC912}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab03.Ex.4_ValidationForm", "Lab03.Ex.4_ValidationForm\Lab03.Ex.4_ValidationForm.csproj", "{3EE98615-6850-4769-A351-34F7C78CA315}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +131,10 @@ Global
 		{39AD80BF-FA2E-4909-A9C6-0E5C832BC912}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39AD80BF-FA2E-4909-A9C6-0E5C832BC912}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39AD80BF-FA2E-4909-A9C6-0E5C832BC912}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EE98615-6850-4769-A351-34F7C78CA315}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EE98615-6850-4769-A351-34F7C78CA315}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EE98615-6850-4769-A351-34F7C78CA315}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EE98615-6850-4769-A351-34F7C78CA315}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
