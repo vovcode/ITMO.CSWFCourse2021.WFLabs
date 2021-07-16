@@ -51,6 +51,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab07.Ex.2_WinAsynchDelegat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab07.Ex.3_WinAsynchMethod", "Lab07.Ex.3_WinAsynchMethod\Lab07.Ex.3_WinAsynchMethod.csproj", "{9FB28FB9-E8C5-40CC-B972-70DA68847DFC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab07.Ex.4_WinAsynchMethod", "Lab07.Ex.4_WinAsynchMethod\Lab07.Ex.4_WinAsynchMethod.csproj", "{FCD6F853-4773-4702-86C1-7F6A9DB49C77}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +155,10 @@ Global
 		{9FB28FB9-E8C5-40CC-B972-70DA68847DFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9FB28FB9-E8C5-40CC-B972-70DA68847DFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9FB28FB9-E8C5-40CC-B972-70DA68847DFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCD6F853-4773-4702-86C1-7F6A9DB49C77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCD6F853-4773-4702-86C1-7F6A9DB49C77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCD6F853-4773-4702-86C1-7F6A9DB49C77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCD6F853-4773-4702-86C1-7F6A9DB49C77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
