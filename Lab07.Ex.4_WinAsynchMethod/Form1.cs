@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace Lab07.Ex._4_WinAsynchMethod
 {
@@ -66,6 +67,33 @@ namespace Lab07.Ex._4_WinAsynchMethod
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private async void button1_Click(object sender, EventArgs e)
+        {
+            int a, b;
+            try
+            {
+                a = Int32.Parse(txbA.Text);
+                b = Int32.Parse(txbB.Text);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("При выполнении преобразования типов возникла ошибка");
+                txbA.Text = txbB.Text = "";
+                return;
+            }
+            int res = await Subb(a, b);
+            lblResult.Text = res.ToString();
+        }
+        private async Task<int> Subb(int a, int b)
+        {
+            return await Task.Run(() =>
+            {
+                Thread.Sleep(5000);
+                return a - b;
+            }
+            );
         }
     }
 }
