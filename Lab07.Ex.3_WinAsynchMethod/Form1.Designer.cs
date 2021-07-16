@@ -35,6 +35,7 @@ namespace Lab07.Ex._3_WinAsynchMethod
             this.txbB = new System.Windows.Forms.TextBox();
             this.btnRun = new System.Windows.Forms.Button();
             this.btnWork = new System.Windows.Forms.Button();
+            this.lblResult = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblA
@@ -77,6 +78,7 @@ namespace Lab07.Ex._3_WinAsynchMethod
             this.btnRun.TabIndex = 4;
             this.btnRun.Text = "Сумма";
             this.btnRun.UseVisualStyleBackColor = true;
+            this.btnRun.Click += new System.EventHandler(this.btnRun_Click);
             // 
             // btnWork
             // 
@@ -86,18 +88,31 @@ namespace Lab07.Ex._3_WinAsynchMethod
             this.btnWork.TabIndex = 5;
             this.btnWork.Text = "Работа";
             this.btnWork.UseVisualStyleBackColor = true;
+            this.btnWork.Click += new System.EventHandler(this.btnWork_Click);
+            // 
+            // lblResult
+            // 
+            this.lblResult.AutoSize = true;
+            this.lblResult.Location = new System.Drawing.Point(236, 69);
+            this.lblResult.Name = "lblResult";
+            this.lblResult.Size = new System.Drawing.Size(47, 13);
+            this.lblResult.TabIndex = 6;
+            this.lblResult.Text = "lblResult";
+            this.lblResult.Click += new System.EventHandler(this.label1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(409, 161);
+            this.ClientSize = new System.Drawing.Size(424, 161);
+            this.Controls.Add(this.lblResult);
             this.Controls.Add(this.btnWork);
             this.Controls.Add(this.btnRun);
             this.Controls.Add(this.txbB);
             this.Controls.Add(this.txbA);
             this.Controls.Add(this.lblB);
             this.Controls.Add(this.lblA);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Асинхронный запуск";
@@ -115,6 +130,7 @@ namespace Lab07.Ex._3_WinAsynchMethod
         private System.Windows.Forms.TextBox txbB;
         private System.Windows.Forms.Button btnRun;
         private System.Windows.Forms.Button btnWork;
+        private System.Windows.Forms.Label lblResult;
     }
 }
 
